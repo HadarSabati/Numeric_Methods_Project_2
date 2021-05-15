@@ -18,8 +18,8 @@ from mpl_toolkits.mplot3d.axes3d import get_test_data
 
 
 
-#np.random.seed(42)
-#random.seed(42)
+np.random.seed(42)
+random.seed(42)
 
 
 
@@ -97,7 +97,7 @@ axes = fig.add_subplot(111, projection='3d')
 
 steps = []
 bounds = asarray([[-10.0, 10.0], [-10.0, 10.0]])
-hillClimbing(objective, bounds, 10, 0.7, (5,2))
+hillClimbing(objective, bounds, 10, 0.7, (2,5))
 
 for step in steps:
     axes.scatter(step[0], step[1], step[2], color='r')

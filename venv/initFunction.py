@@ -35,7 +35,7 @@ for i in range(6):
     xVar = random.uniform(0.06, 0.6)
 
     # calculating g(x) functions
-    Z = WsArr[i]*((np.exp(-(X - xExp) ** 2 / (2 * xVar)))*(np.exp(-(Y - yExp) ** 2 / (2 * yVar))))
+    Z = -WsArr[i]*((np.exp(-(X - xExp) ** 2 / (2 * xVar)))*(np.exp(-(Y - yExp) ** 2 / (2 * yVar))))
     gaussianFunctions.append(Z)
 
 def getFunc():
@@ -56,12 +56,8 @@ def getOutputFromFunc(v):
     x, y = v
     x = int(x*40 + 400)
     y = int(y*40 + 400)
-    if x == 800:
-        print ("helloX!")
-        x = 799
-    if y == 800:
-        print ("helloY!")
-        y = 799
+    #print("X: ", x), print("Y: ", y), print("Final: ", final[y][x])
+
     return final[y][x]
 
 
@@ -89,8 +85,6 @@ fig.colorbar(surf1, ax=axes)  # , shrink=0.5, aspect=10)
 
 ## TODO: showSteps with HC and GWO
 # plt.show()
-
-
 
 ## Setting parameters
 obj_func = getOutputFromFunc
