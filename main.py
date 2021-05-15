@@ -18,8 +18,8 @@ from mpl_toolkits.mplot3d.axes3d import get_test_data
 
 
 
-np.random.seed(42)
-random.seed(42)
+#np.random.seed(42)
+#random.seed(42)
 
 
 
@@ -96,8 +96,8 @@ fig = plt.figure(figsize=(15, 15))
 axes = fig.add_subplot(111, projection='3d')
 
 steps = []
-bounds = asarray([[-5.0, 5.0], [-5.0, 5.0]])
-hillClimbing(objective, bounds, 10, 0.3, (2,5))
+bounds = asarray([[-10.0, 10.0], [-10.0, 10.0]])
+hillClimbing(objective, bounds, 10, 0.7, (5,2))
 
 for step in steps:
     axes.scatter(step[0], step[1], step[2], color='r')
@@ -110,7 +110,7 @@ for step in steps:
 # axes.scatter(steps[5][0], steps[5][1], steps[5][2], color='g')
 # #axes.scatter(steps[6][0], steps[6][1], steps[6][2], color='b')
 
-surf1 = axes.plot_surface(X, Y, final, cmap=mycmap, alpha=0.5)
+surf1 = axes.plot_surface(X, Y, final, cmap=mycmap, alpha=0.4)
 axes.set_title('Gaussian Graph')
 fig.colorbar(surf1, ax=axes) # , shrink=0.5, aspect=10)
 
