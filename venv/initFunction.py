@@ -9,14 +9,15 @@ from mpl_toolkits.mplot3d import axes3d
 
 from opfunu.cec_basic.cec2014_nobias import *
 from mealpy.math_based.HC import OriginalHC, BaseHC
+from mealpy.swarm_based.GWO import BaseGWO, RW_GWO
 
 from numpy.random import normal
 from numpy import sum, mean, exp, array
 from mealpy.root import Root
 from mpl_toolkits.mplot3d.axes3d import get_test_data
 
-#np.random.seed(42)
-#random.seed(42)
+np.random.seed(42)
+random.seed(42)
 
 
 ## init the variables
@@ -57,7 +58,10 @@ def getOutputFromFunc(v):
     x = int(x*40 + 400)
     y = int(y*40 + 400)
     #print("X: ", x), print("Y: ", y), print("Final: ", final[y][x])
-
+    if(x>799):
+        x=799;
+    if (y >799):
+        y = 799;
     return final[y][x]
 
 
@@ -65,14 +69,11 @@ mycmap = plt.get_cmap('turbo')
 fig = plt.figure(figsize=(15, 15))
 axes = fig.add_subplot(111, projection='3d')
 
-
-
-# steps = []
 # bounds = asarray([[-10.0, 10.0], [-10.0, 10.0]])
 # hillClimbing(objective, bounds, 10, 0.7, (5,2))
 #
 # for step in steps:
-#     axes.scatter(step[0], step[1], step[2], color='r')
+ #    axes.scatter(step[0], step[1], step[2], color='r')
 
 def showSteps(steps):
     for step in steps:
@@ -84,7 +85,7 @@ axes.set_title('Gaussian Graph')
 fig.colorbar(surf1, ax=axes)  # , shrink=0.5, aspect=10)
 
 ## TODO: showSteps with HC and GWO
-# plt.show()
+ #plt.show()
 
 ## Setting parameters
 obj_func = getOutputFromFunc
@@ -98,10 +99,16 @@ pop_size = 50
 lb1 = [-9.99, -9.99]
 ub1 = [9.99, 9.99]
 
-md1 = BaseHC(obj_func, lb1, ub1, verbose, epoch, pop_size)
+md1 = BaseGWO(obj_func, lb1, ub1, verbose, epoch, pop_size)
 best_pos1, best_fit1, list_loss1 = md1.train()
 print(md1.solution[1])
-print("done")
+#
+# md1 = BaseHC(obj_func, lb1, ub1, verbose, epoch, pop_size)
+# best_pos1, best_fit1, list_loss1 = md1.train()
+# print(md1.solution[1])
+# showSteps(md1.solution[1])
+# print(md1.loss_train)
+# print("done")
 
 # ## 2. When you have same lower bound and upper bound for each parameters, then you can use:
 # ##      + int or float: then you need to specify your problem size (number of dimensions)
