@@ -40,12 +40,14 @@ for i in range(6):
     gaussianFunctions.append(Z)
 
 def getFunc():
-    final = np.maximum(gaussianFunctions[0], gaussianFunctions[1])
-    final = np.maximum(final, gaussianFunctions[2])
-    final = np.maximum(final, gaussianFunctions[3])
-    final = np.maximum(final, gaussianFunctions[4])
-    final = np.maximum(final, gaussianFunctions[5])
+    final = np.maximum(-gaussianFunctions[0], -gaussianFunctions[1])
+    final = np.maximum(final, -gaussianFunctions[2])
+    final = np.maximum(final, -gaussianFunctions[3])
+    final = np.maximum(final, -gaussianFunctions[4])
+    final = np.maximum(final, -gaussianFunctions[5])
     return final
+
+stepsGWO = []
 
 def getOutputFromFunc(v):
     final = np.minimum(gaussianFunctions[0], gaussianFunctions[1])
@@ -58,10 +60,13 @@ def getOutputFromFunc(v):
     x = int(x*40 + 400)
     y = int(y*40 + 400)
     #print("X: ", x), print("Y: ", y), print("Final: ", final[y][x])
+
     if(x>799):
         x=799;
     if (y >799):
         y = 799;
+
+    #stepsGWO.append( ((x-400)/40, (y-400)/40, final[y][x]) )
     return final[y][x]
 
 
@@ -75,9 +80,9 @@ axes = fig.add_subplot(111, projection='3d')
 # for step in steps:
  #    axes.scatter(step[0], step[1], step[2], color='r')
 
-def showSteps(steps):
+def showSteps(steps, col):
     for step in steps:
-        axes.scatter(step[0], step[1], step[2], color='r')
+        axes.scatter(step[0], step[1], step[2], color= col )
 
 func = getFunc()
 surf1 = axes.plot_surface(X, Y, func, cmap=mycmap, alpha=0.4)
@@ -89,7 +94,7 @@ fig.colorbar(surf1, ax=axes)  # , shrink=0.5, aspect=10)
 
 ## Setting parameters
 obj_func = getOutputFromFunc
-verbose = True
+verbose = False
 epoch = 10
 pop_size = 50
 
@@ -100,8 +105,15 @@ lb1 = [-9.99, -9.99]
 ub1 = [9.99, 9.99]
 
 md1 = BaseGWO(obj_func, lb1, ub1, verbose, epoch, pop_size)
-best_pos1, best_fit1, list_loss1 = md1.train()
-print(md1.solution[1])
+# stepsGWO = []
+best_pos1, best_fit1, list_loss1 = md1.train(stepsGWO)
+print(md1.loss_train)
+print(md1.solution[1], md1.solution[0])
+
+showSteps([(md1.solution[0][0], md1.solution[0][1], -md1.solution[1])], 'g')
+#showSteps(stepsGWO, 'r')
+plt.show()
+
 #
 # md1 = BaseHC(obj_func, lb1, ub1, verbose, epoch, pop_size)
 # best_pos1, best_fit1, list_loss1 = md1.train()

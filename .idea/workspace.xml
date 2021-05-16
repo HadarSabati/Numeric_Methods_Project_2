@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07f0ef38-52a1-4485-9fee-5a2503366a01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Numeric_Methods_Project_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Numeric_Methods_Project_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/initFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/initFunction.py" afterDir="false" />
     </list>
@@ -18,9 +20,9 @@
     <option name="defaultAccountId" value="26fa6fc1-ba1e-4645-a060-941b5c4488bc" />
   </component>
   <component name="ProjectId" id="1sOjMjm68s1sK7cjdMBwOCUjMWt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -96,6 +98,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.run_test_GWO" />
+      <item itemvalue="Python.initFunction" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.initFunction" />
@@ -149,108 +156,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update step size and bounds" />
     <option name="LAST_COMMIT_MESSAGE" value="update step size and bounds" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621069346747">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2064" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621069346747" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1620891458726" />
-    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1621081046285">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081046285" />
-    <state x="2497" y="115" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621078519316" />
-    <state x="2872" y="116" key="Github.ShareDialog" timestamp="1620750852862">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2872" y="116" key="Github.ShareDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1620750852862" />
-    <state width="1237" height="337" key="GridCell.Tab.0.bottom" timestamp="1621149183490">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081672765" />
-    <state width="1877" height="354" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084760178" />
-    <state width="1237" height="337" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1621149183490" />
-    <state width="1237" height="337" key="GridCell.Tab.0.center" timestamp="1621149183490">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081672764" />
-    <state width="1877" height="354" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084760178" />
-    <state width="1237" height="337" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1621149183490" />
-    <state width="1237" height="337" key="GridCell.Tab.0.left" timestamp="1621149183489">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081672764" />
-    <state width="1877" height="354" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084760178" />
-    <state width="1237" height="337" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1621149183489" />
-    <state width="1237" height="337" key="GridCell.Tab.0.right" timestamp="1621149183490">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081672764" />
-    <state width="1877" height="354" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084760178" />
-    <state width="1237" height="337" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1621149183490" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1621084074338">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084074338" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1621084074338">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084074338" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1621084074338">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084074338" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1621084074338">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621084074338" />
-    <state x="2381" y="163" key="SettingsEditor" timestamp="1621059521643">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2381" y="163" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621059521643" />
-    <state x="368" y="149" key="Vcs.Push.Dialog.v2" timestamp="1621081049776">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="368" y="149" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621081049776" />
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621064414902" />
-    <state x="2561" y="643" key="com.intellij.ide.util.TipDialog" timestamp="1621059133404">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2561" y="643" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621059133404" />
-    <state x="2595" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621079619453">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2595" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1621079619453" />
-    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1620983122433" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/venv/initFunction.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="9" />
+          <line>52</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/venv/initFunction.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/venv/initFunction.py</url>
-          <line>103</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/mealpy/swarm_based/GWO.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Numeric_Methods_Project_2$run_test_GWO.coverage" NAME="run_test_GWO Coverage Results" MODIFIED="1621070186983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/Temp1_mealpy-1.1.0.zip/mealpy-1.1.0/mealpy-1.1.0/examples/swarm_based" />
-    <SUITE FILE_PATH="coverage/Numeric_Methods_Project_2$initFunction.coverage" NAME="initFunction Coverage Results" MODIFIED="1621149183482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/Numeric_Methods_Project_2$main.coverage" NAME="main Coverage Results" MODIFIED="1621070196883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
